@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Корзина</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/basket.css">
+</head>
+<body>
+  <div class="filter"></div>
+  <header>
+    <div class="header-container">
+      <a href="index.html">
+        <img src="icons/main-icon.svg" alt="logo" width="25" height="25">
+        <p class="head-link">MISO</p>
+      </a>
+      <nav class="navigator">
+        <ul>
+          <li class="navigator-item "><a href="index.html">Главная</a></li>
+          <li class="navigator-item current"><a href="">Корзина</a></li>
+          <li class="navigator-item"><a href="">О нас</a></li>
+          <li class="navigator-item"><a href="">О доставке</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li class="social-item">
+          <a href="">
+            <img src="icons/vk.svg" alt="vk">
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="">
+            <img src="icons/instagram.svg" alt="Instagram">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="mainground">
+
+
+      <main>
+        <h1>Корзина</h1>
+        <div class="swap-cards-container">
+          <button id="buttonList" class="swap-card"><h2>Список покупок</h2></button>
+          <button id="buttonForm" class="swap-card unactive"><h2>Оформление заказа</h2></button>
+        </div>
+        <div class="section-container">
+          <section class="backet">
+            <div class="buyings hidden">
+              <table class="buy-table">
+                <thead>
+                  <tr>
+                    <th><!--Изображение--></th>
+                    <th><!--Название товара--></th>
+                    <th class="cost-h">Цена</th>
+                    <th class="count-h">Кол-во</th>
+                    <th class="total-h">Итого</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="image"><img src="img/set_1-backet.jpg"></td>
+                    <td class="info">
+                      <h3>Сет 1</h3>
+                      <span class="weight">300gr.</span>
+                      <h4 class="category">Сеты</h4>
+                    </td>
+                    <td class="cost">1000руб</td>
+                    <td class="count">
+                      <input type="number" value="2">
+                    </td>
+                    <td class="total">1000 руб.</td>
+                    <td class="cross"> <button class="cross-button"><img src="icons/cross.svg" width="40" height="40"></button> </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <div class="form">
+              <form>
+                <fieldset class="personal">
+                  <h3>1.Персональные данные</h3>
+                  <ul>
+                    <li><input value="hah" class="active" id="name" type="text" placeholder="Имя"></li>
+                    <li><input id="email" type="email" placeholder="E-mail"></li>
+                    <li><input id="tel" type="tel" placeholder="Телефон"></li>
+                  </ul>
+                </fieldset>
+                <fieldset class="pay-way">
+                  <h3>3.Способ оплаты</h3>
+                  <div class="radio-payment">
+                    <button type='button' name="cash" class="payment active">Наличными</button>
+                    <button type='button' name="card" class="payment">Оплата картой</button>
+                  </div>
+                </fieldset>
+                <fieldset class="delivery-way">
+                  <h3>2.Способ доставки</h3>
+                  <div class="radio-delivery">
+                    <div class="button-bord left-side"></div>
+                    <button type='button' class="delivery-button active">Доставка</button>
+                    <button type='button' class="delivery-button">Самовывоз</button>
+                  </div>
+                  <ul class="address-grid">
+                    <li>
+                      <input type="text" id="address" placeholder="Адрес"></li>
+                    <li>
+                      <input type="text" id="entrance" placeholder="Подъезд"></li>
+                    <li>
+                      <input type="text" id="floor" placeholder="Этаж"></li>
+                    <li>
+                      <input type="text" id="flat" placeholder="Офис/Квартира"></li>
+                    <li>
+                      <input type="text" id="comment" placeholder="Комментарий к заказу"></li>
+                  </ul>
+                </fieldset>
+                <section>
+
+                </section>
+              </form>
+            </div>
+
+
+          </section>
+          <section class="check">
+            <h2>Ваш заказ</h2>
+            <table class="check-list">
+              <tr>
+                <td>Название</td>
+                <td>Кол-во</td>
+                <td>Сумма</td>
+              </tr>
+              <tbody>
+                <tr>
+                  <td><h3>Рамен с какахами</h3></td>
+                  <td><input type="number" value="2"></td>
+                  <td><p class="cost"></p></td>
+                </tr>
+                <tr>
+                  <td><h3>Рамен с какахами</h3></td>
+                  <td><input type="number" value="2"></td>
+                  <td><p class="cost"></p></td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="check-total">Сумма заказа <span class="cost">1000rub.</span></p>
+            <p class="check-payment">К оплате<span class="cost">2000rub.</span> </p>
+
+          </section>
+        </div>
+      </main>
+
+
+  </div>
+  <script src="js/basket.js"></script>
+  <footer>
+    <div class="footer-container">
+      <h2>MISO</h2>
+      <address>г. Москва, ул. Красная, ОГРН 04596830953045938450380</address>
+      <p>Сайт показательный, для личного пользования .
+        Любое использование материалов без чьего-то разрешения типо запрещено.
+        Фотографии блюд на сайте являются вариантом сервировки чьих то блюд.
+        Внешний вид блюда может отличаться от фотографии на сайте, если бы он был настоящим. </p>
+    </div>
+  </footer>
+</body>
+</html>
