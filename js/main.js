@@ -23,11 +23,11 @@ class FoodCard {
   }
 }
 
-let arr = [new FoodCard('Сет 2','../img/set_1.jpg'),
-  new FoodCard('Сет Са','../img/set_2.jpg'),
-  new FoodCard('Сет Ата','../img/set_3.jpg'),
-  new FoodCard('Сет rgergа','../img/set_2.jpg'),
-  new FoodCard('Сет Сererа','../img/set_2.jpg')];
+let arr = [new FoodCard('Сет 2','img/set_1.jpg'),
+  new FoodCard('Сет Са','img/set_2.jpg'),
+  new FoodCard('Сет Ата','img/set_3.jpg'),
+  new FoodCard('Сет rgergа','img/set_2.jpg'),
+  new FoodCard('Сет Сererа','img/set_2.jpg')];
 
 
 for(let elem of arr){
